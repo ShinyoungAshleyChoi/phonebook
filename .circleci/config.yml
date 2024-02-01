@@ -1,0 +1,11 @@
+version: 2.1
+
+jobs:
+  build:
+    docker:
+     - image: repo.keywert.com:5000/wert/data/copyssh
+       auth:
+         username: sychoi
+         password: sychoi1234
+    steps:
+        - run: echo "Say hello to YAML!"
